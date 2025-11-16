@@ -1,0 +1,136 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "building_archeryrange_red"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "hexagons_medieval",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "building_archeryrange_red",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "hexagons_medieval",
+            "uri" : "hexagons_medieval.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 5608,
+            "max" : [
+                0.8706369400024414,
+                1.7917345762252808,
+                0.6773496270179749
+            ],
+            "min" : [
+                -0.799997091293335,
+                0,
+                -0.8734661936759949
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 5608,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 5608,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 11457,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 67296,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 44864,
+            "byteOffset" : 67296,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 67296,
+            "byteOffset" : 112160,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22914,
+            "byteOffset" : 179456,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 202372,
+            "uri" : "building_archeryrange_red.bin"
+        }
+    ]
+}

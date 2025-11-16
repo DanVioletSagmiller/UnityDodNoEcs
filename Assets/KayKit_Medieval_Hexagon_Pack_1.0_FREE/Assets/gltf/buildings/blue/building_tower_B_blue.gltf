@@ -1,0 +1,215 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "building_tower_B_top_blue"
+        },
+        {
+            "children" : [
+                0
+            ],
+            "mesh" : 1,
+            "name" : "building_tower_B_blue"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "hexagons_medieval",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "building_tower_B_top_blue",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "building_tower_B_blue",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "hexagons_medieval",
+            "uri" : "hexagons_medieval.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1374,
+            "max" : [
+                0.59869784116745,
+                2.4853649139404297,
+                0.6913166046142578
+            ],
+            "min" : [
+                -0.5986979007720947,
+                1.2779241800308228,
+                -0.6913166046142578
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1374,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1374,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 2640,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2265,
+            "max" : [
+                0.4648962616920471,
+                1.5,
+                0.5800000429153442
+            ],
+            "min" : [
+                -0.4648962616920471,
+                0,
+                -0.5311260223388672
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 2265,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2265,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 4614,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 16488,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10992,
+            "byteOffset" : 16488,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16488,
+            "byteOffset" : 27480,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5280,
+            "byteOffset" : 43968,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27180,
+            "byteOffset" : 49248,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18120,
+            "byteOffset" : 76428,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27180,
+            "byteOffset" : 94548,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9228,
+            "byteOffset" : 121728,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 130956,
+            "uri" : "building_tower_B_blue.bin"
+        }
+    ]
+}

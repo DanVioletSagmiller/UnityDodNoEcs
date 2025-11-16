@@ -1,0 +1,302 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "building_lumbermill_saw_red",
+            "translation" : [
+                0.2799956798553467,
+                0.28000104427337646,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "building_lumbermill_top_red",
+            "translation" : [
+                -0.14000844955444336,
+                1.0500000715255737,
+                -0.1399998664855957
+            ]
+        },
+        {
+            "children" : [
+                0,
+                1
+            ],
+            "mesh" : 2,
+            "name" : "building_lumbermill_red"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "hexagons_medieval",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "building_lumbermill_saw_red",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "building_lumbermill_top_red",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "building_lumbermill_red",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "TEXCOORD_0" : 9,
+                        "NORMAL" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "hexagons_medieval",
+            "uri" : "hexagons_medieval.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 516,
+            "max" : [
+                0.14000001549720764,
+                0.24500000476837158,
+                0.24500000476837158
+            ],
+            "min" : [
+                -0.14000003039836884,
+                -0.2449999451637268,
+                -0.24500001966953278
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 516,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 516,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 900,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1577,
+            "max" : [
+                0.3955053687095642,
+                0.6543220281600952,
+                0.8699597120285034
+            ],
+            "min" : [
+                -0.3150000274181366,
+                -1.1920928955078125e-07,
+                -0.3149999976158142
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1577,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1577,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 3450,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 2509,
+            "max" : [
+                0.6808386445045471,
+                1.0500010251998901,
+                0.567771315574646
+            ],
+            "min" : [
+                -0.6861284375190735,
+                -0.0035033971071243286,
+                -0.4592732787132263
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 2509,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 2509,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 5160,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 6192,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4128,
+            "byteOffset" : 6192,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6192,
+            "byteOffset" : 10320,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1800,
+            "byteOffset" : 16512,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18924,
+            "byteOffset" : 18312,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12616,
+            "byteOffset" : 37236,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18924,
+            "byteOffset" : 49852,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6900,
+            "byteOffset" : 68776,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30108,
+            "byteOffset" : 75676,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20072,
+            "byteOffset" : 105784,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 30108,
+            "byteOffset" : 125856,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10320,
+            "byteOffset" : 155964,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 166284,
+            "uri" : "building_lumbermill_red.bin"
+        }
+    ]
+}

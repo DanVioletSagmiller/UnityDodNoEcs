@@ -1,0 +1,302 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "wall_straight_gate_door_left",
+            "translation" : [
+                0.45000743865966797,
+                0,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "wall_straight_gate_door_right",
+            "translation" : [
+                -0.44999217987060547,
+                0,
+                0
+            ]
+        },
+        {
+            "children" : [
+                0,
+                1
+            ],
+            "mesh" : 2,
+            "name" : "wall_straight_gate"
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "hexagons_medieval",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "wall_straight_gate_door_left",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "wall_straight_gate_door_right",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "TEXCOORD_0" : 5,
+                        "NORMAL" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "wall_straight_gate",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "TEXCOORD_0" : 9,
+                        "NORMAL" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "hexagons_medieval",
+            "uri" : "hexagons_medieval.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 402,
+            "max" : [
+                0,
+                0.8114722371101379,
+                0.0889848917722702
+            ],
+            "min" : [
+                -0.44999992847442627,
+                0.020000005140900612,
+                -0.0889848917722702
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 402,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 402,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 720,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 402,
+            "max" : [
+                0.44999992847442627,
+                0.8114722371101379,
+                0.0889848917722702
+            ],
+            "min" : [
+                0,
+                0.020000005140900612,
+                -0.0889848917722702
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 402,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 402,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 720,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 520,
+            "max" : [
+                1,
+                1.3640289306640625,
+                0.49562400579452515
+            ],
+            "min" : [
+                -1,
+                -0.049999967217445374,
+                -0.4000000059604645
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 520,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 520,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 1020,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 4824,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3216,
+            "byteOffset" : 4824,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4824,
+            "byteOffset" : 8040,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1440,
+            "byteOffset" : 12864,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4824,
+            "byteOffset" : 14304,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3216,
+            "byteOffset" : 19128,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4824,
+            "byteOffset" : 22344,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1440,
+            "byteOffset" : 27168,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6240,
+            "byteOffset" : 28608,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4160,
+            "byteOffset" : 34848,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6240,
+            "byteOffset" : 39008,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2040,
+            "byteOffset" : 45248,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 47288,
+            "uri" : "wall_straight_gate.bin"
+        }
+    ]
+}
