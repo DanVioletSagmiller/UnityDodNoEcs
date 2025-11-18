@@ -8,6 +8,7 @@ public class CityInstancedRenderer : MonoBehaviour
     private Mesh[] _CorrectedMeshes;
     public Material material;
 
+    public bool Plus10k = false;
     public Vector2Int AreaSize = new Vector2Int(317, 317);
 
 
@@ -17,14 +18,40 @@ public class CityInstancedRenderer : MonoBehaviour
     public Vector3 scale = Vector3.one;
     
     Matrix4x4[][] _batches;
+    bool _initialized;
 
-    void OnEnable()
+    void Start()
     {
+        _initialized = true;
         BuildBatches();
     }
 
     void OnValidate()
     {
+        if (!_initialized)
+        {
+            _initialized = true;
+            return; // don't run on start.
+        }
+        
+        if (Plus10k)
+        {
+            Plus10k = false;
+            var total = AreaSize.x * AreaSize.y;
+            var target = total + 10000;
+            var factor = Mathf.Sqrt(target / (float)total);
+            if (AreaSize.x * AreaSize.y == 0)
+            {
+                AreaSize = new Vector2Int(100, 100);
+            }
+            else
+            {
+                AreaSize = new Vector2Int(
+                    Mathf.CeilToInt(AreaSize.x * factor),
+                    Mathf.CeilToInt(AreaSize.y * factor) );
+            }
+        }
+        
         if (Application.isPlaying)
             BuildBatches();
     }
@@ -49,9 +76,10 @@ public class CityInstancedRenderer : MonoBehaviour
     
     void BuildBatches()
     {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        
         // Randome amounts of each
         int total = AreaSize.x * AreaSize.y;
-        Debug.Log(total + " Objects being rendered live");
 
         // if any are 0, then all are 0. Skip
         if (total == 0)
@@ -82,6 +110,8 @@ public class CityInstancedRenderer : MonoBehaviour
         {
             _batches[i] = batchBuilder[i].ToArray();
         }
+        
+        Debug.Log("Created " + total + " prefabs in " + sw.ElapsedMilliseconds + " ms");
     }
 
     void Update()

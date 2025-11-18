@@ -7,6 +7,7 @@ public class Grid2InstancedRenderer : MonoBehaviour
     public Mesh mesh;
     public Material material;
 
+    public bool Plus10k = false;
     public Vector2Int BatchSize = Vector2Int.one * 50;
     public Vector2Int GridSize = Vector2Int.one * 40;
     
@@ -25,29 +26,60 @@ public class Grid2InstancedRenderer : MonoBehaviour
     
     
     Matrix4x4[][] _batches;
-    private float[][] _distances;
+    float[][] _distances;
+    bool _initialized;
 
-    void OnEnable()
+    void Start()
     {
+        _initialized = true;
         BuildBatches();
     }
 
     void OnValidate()
     {
+        if (!_initialized)
+        {
+            _initialized = true;
+            return; // don't run on start.
+        }
+        
+        if (Plus10k)
+        {
+            Plus10k = false;
+            var total = BatchSize.x * BatchSize.y * GridSize.x * BatchSize.y;
+            var target = total + 10000;
+            
+            if (total == 0)
+            {
+                BatchSize = new Vector2Int(10, 10);
+                GridSize = new Vector2Int(10, 10);  
+            }
+            else
+            {
+                var factor = Mathf.Sqrt(Mathf.Sqrt(target / (float)total));
+                BatchSize = new Vector2Int(
+                    Mathf.CeilToInt(BatchSize.x * factor),
+                    Mathf.CeilToInt(BatchSize.y * factor)); 
+                GridSize = new Vector2Int(
+                    Mathf.CeilToInt(GridSize.x * factor),
+                    Mathf.CeilToInt(GridSize.y * factor)); 
+            }
+        }
+        
         if (Application.isPlaying)
             BuildBatches();
     }
     
     void BuildBatches()
     {
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        
         // if any are 0, then all are 0. Skip
         if (GridSize.x * GridSize.y * BatchSize.x * BatchSize.y == 0)
         {
             _batches = null;
             return;
         }
-        
-        Debug.Log(GridSize.x * GridSize.y * BatchSize.x * BatchSize.y + " Cubes");
         
         var rotation = Quaternion.Euler(eulerRotation);
         Vector3 offset = Vector3.zero - new Vector3(GridSize.x * BatchSize.x * spacing, 0, GridSize.y * BatchSize.y * spacing) * .5f;
@@ -81,6 +113,8 @@ public class Grid2InstancedRenderer : MonoBehaviour
                 _distances[gridIndex] = distanceBatch;
             }
         }
+        
+        Debug.Log("Created " + (GridSize.x * GridSize.y * BatchSize.x * BatchSize.y) + " prefabs in " + sw.ElapsedMilliseconds + " ms");
     }
 
     void Update()
