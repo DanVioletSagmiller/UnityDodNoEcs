@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 2124753547}
   - component: {fileID: 2124753546}
   m_Layer: 0
-  m_Name: PrefabsCompare
+  m_Name: Prefabs Compare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
