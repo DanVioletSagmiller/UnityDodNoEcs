@@ -179,7 +179,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 101
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -205,13 +205,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23844866, y: 0, z: 0, w: 0.97115517}
+  m_LocalRotation: {x: 0.34333187, y: 0, z: 0, w: 0.93921417}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1894118999}
-  m_LocalEulerAnglesHint: {x: 27.59, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40.16, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,61 +256,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &343470919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 343470921}
-  - component: {fileID: 343470920}
-  m_Layer: 0
-  m_Name: Draw Water 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &343470920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343470919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52438213c3345c688afb0c0bbcded2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GridInstancedRenderer
-  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: 04db80219716f4566a836b43398943a8, type: 2}
-  BatchSize: {x: 10, y: 10}
-  GridSize: {x: 30, y: 30}
-  spacing: 1
-  origin: {x: 0, y: 0, z: 0}
-  scale: {x: 1, y: 1, z: 1}
-  eulerRotation: {x: 0, y: 0, z: 0}
-  Frequency: 0.31
-  WaveLength: 5.92
-  Amplitude: 1
---- !u!4 &343470921
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343470919}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.69033, y: 0, z: 2.05817}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &793515333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,7 +415,7 @@ MonoBehaviour:
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 04db80219716f4566a836b43398943a8, type: 2}
   BatchSize: {x: 10, y: 10}
-  GridSize: {x: 30, y: 30}
+  GridSize: {x: 32, y: 32}
   spacing: 1
   origin: {x: 0, y: 0, z: 0}
   scale: {x: 1, y: 1, z: 1}
@@ -776,6 +721,5 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 793515334}
-  - {fileID: 343470921}
   - {fileID: 1284886580}
   - {fileID: 1894118999}
