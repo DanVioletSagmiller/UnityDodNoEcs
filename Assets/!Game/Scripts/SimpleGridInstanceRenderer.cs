@@ -23,6 +23,7 @@ public class SimpleInstancedRenderer : MonoBehaviour
         BuildBatch();
     }
 
+
     void OnValidate()
     {
         if (!_initialized)

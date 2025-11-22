@@ -10,32 +10,36 @@ public class Grid2InstancedRenderer : MonoBehaviour
     public bool Plus10k = false;
     public Vector2Int BatchSize = Vector2Int.one * 50;
     public Vector2Int GridSize = Vector2Int.one * 40;
-    
-    
+
+
     public float spacing = 1f;
     public Vector3 origin = Vector3.zero;
     public Vector3 scale = Vector3.one;
     public Vector3 eulerRotation = Vector3.zero;
-    [Range(0f,2f)]
-    public float Frequency = 1f;
-    [Range(5f,7f)]
-    public float WaveLength = 1f;
+    [Range(0f, 2f)] public float Frequency = 1f;
+    [Range(5f, 7f)] public float WaveLength = 1f;
 
-    [Range(0f, 3f)] 
-    public float Amplitude = 1f;
-    
-    
+    [Range(0f, 3f)] public float Amplitude = 1f;
+
+
     Matrix4x4[][] _batches;
     float[][] _distances;
     bool _initialized;
 
     void Start()
     {
+
         _initialized = true;
         BuildBatches();
+        IsThisUnmanaged(5d);
     }
 
-    void OnValidate()
+    public void IsThisUnmanaged<T>(T value) where T : unmanaged
+    {
+        
+    }
+
+void OnValidate()
     {
         if (!_initialized)
         {
@@ -131,7 +135,7 @@ public class Grid2InstancedRenderer : MonoBehaviour
             {
                 // Position in R3, in C0=X, C1=Y, C2=Z
                 var matrix = batch[batchIndex];
-                matrix.m13 = Amplitude * Mathf.Sin(distances[batchIndex] * time) * .5f;
+                matrix.m13 = Amplitude * Mathf.Sin(WaveLength * distances[batchIndex] * time) * .5f;
                 batch[batchIndex] = matrix;
             }
             
